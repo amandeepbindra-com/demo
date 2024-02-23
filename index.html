@@ -25,6 +25,10 @@
   font-family: myFont1;
   src: url('ClarikaProGeo-Rg.otf')  format('truetype');
 	}
+	@font-face {
+  font-family: myFont3;
+  src: url('ClarikaProGeo-Md.otf')  format('truetype');
+	}
 
 	.head{
 		padding-bottom: 300px;
@@ -95,7 +99,7 @@
 		color: black;
 		background-color: white;
 		height: 55px;
-		width: 320px;
+		width: 340px;
 		border-top-left-radius: 30px;
 		border-bottom-left-radius: 30px;
 		border-top-right-radius: 30px;
@@ -114,8 +118,8 @@
 	}
 	.txt2{
     line-height: 1.2;
-    margin-top: 13px;
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 15px;
 	}
 	.block3{
 		margin-top: 40px;
@@ -333,7 +337,7 @@
 		margin-bottom: 40px;
 	}
 	.simg1{
-    background-image: url("s1.jpg");
+    background-image: url("s3.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 115% auto;
@@ -345,7 +349,13 @@
     background-size: 115% auto;
 	}
 	.simg3{
-    background-image: url("s3.jpg");
+    background-image: url("s1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+	.simg4{
+    background-image: url("s2.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 115% auto;
@@ -361,8 +371,8 @@
     left: 0;
 	}
 	.section2{
-		width: 100%;
-		height: 300px;
+		margin: 0 40px;
+		height: 350px;
 		background-color: white;
 		border-top-left-radius: 50px;
 		border-bottom-left-radius: 50px;
@@ -376,26 +386,25 @@
 		margin-top: 10px;
 	}
 	.secc1{
-		margin-left: 20px;
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-top: 50px;
+		width: 388.667px;
+    margin-right: 25px;
 		max-width: 350px;
 		color: #606060;
+		padding-top: 45px;
+		padding-left: 30px;
+		font-size: 25px;
 	}
 	.secline{
 		width: 1px;
 		background-color: lightgrey;
-		margin-top: 50px;
 		margin-bottom: 50px;
 	}
-
 	.sec2bd{
-		font-weight: bold;
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.sec2cnt{
 		font-family: myfont1;
+		margin-right: 40px;
 	}
 	.shape4{
 		background: linear-gradient(90deg, rgba(0,142,215,1) 46%, rgba(110,0,233,1) 84%);
@@ -408,9 +417,6 @@
 		margin-top: 30px;
 		margin-bottom: 25px;
 	}
-	.txtc{
-		text-align: center;
-	}
 	.about{
 		background-image: url("bottom.png");
     background-repeat: no-repeat;
@@ -422,7 +428,7 @@
 		z-index: 99999;
 	}
 	.d-c{
-		margin-top: 80px;
+		margin-top: 50px;
 		display: flex;
 		justify-content: center;
 		width: 100%;
@@ -443,6 +449,18 @@
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 		margin: 20px;
+	}
+	.sc-cnt-txt{
+		font-family: myfont3;
+	}
+	.f23{
+		font-size: 18px;
+	}
+	.sd{
+		display: flex;
+	}
+	.f16{
+		font-size: 16px;
 	}
 </style>
 
@@ -468,7 +486,7 @@
 		    				<img src="icon2.png" class="icon">
 		    				<span class="icon_txt">Dubai</span>
 		    				<div class="slash"></div>
-		    				<span class="txt2">Grand Plaza Mövenpick<br>Media City</span>
+		    				<span class="txt2">Grand Plaza Mövenpick Media City</span>
 		    			</div>
 		    			<div class="block3">
 		    				<h2 class="line3">About the Event</h2>
@@ -531,32 +549,77 @@
 			        	<div class="swiper-slide">
 			        			<div class="sc-i-1 steam1">
 										<div class="sc-bg-team">
-											<div class="sc-cnt">
-												<h2 class="s-w">Sameer Garde</h2>
-												<p class="sc-cnt-txt s-w">Executive Director & Group CEO</p>
-												<b class="sc-sub">Capillary technology</b>
+											<div class="sc-bg-team">
+												<div class="sc-cnt">
+													<h2 class="s-w">Emily Collins</h2>
+													<span class="sc-cnt-txt s-w f23">VP, Research Director</span><br>
+													<b class="sc-sub">Forrester</b>
+												</div>
 											</div>
 										</div>
 									</div>
 			        	</div>
 			        	<div class="swiper-slide">
 			        			<div class="sc-i-1 steam2">
-											<div class="sc-bg-team">
-												<div class="sc-cnt">
-													<h2 class="s-w">Aneesh Reddy</h2>
-													<p class="sc-cnt-txt s-w">Founder & MD</p>
-													<b class="sc-sub">Capillary technology</b>
+			        				<div class="sc-bg-team">
+												<div class="sc-bg-team">
+													<div class="sc-cnt">
+														<h2 class="s-w">Aaron Dauphinee</h2>
+														<span class="sc-cnt-txt s-w f23">Chief Marketing & Business Officer</span><br>
+														<b class="sc-sub">Wise Marketer Group</b>
+													</div>
 												</div>
 											</div>
 										</div>
 			        	</div>
 			        	<div class="swiper-slide">
 			        			<div class="sc-i-1 steam3">
-											<div class="sc-bg-team">
-												<div class="sc-cnt">
-													<h2 class="s-w">Anant Choubey</h2>
-													<p class="sc-cnt-txt s-w">Co-founder & COO</p>
-													<b class="sc-sub">Capillary technology</b>
+			        				<div class="sc-bg-team">
+												<div class="sc-bg-team">
+													<div class="sc-cnt">
+														<h2 class="s-w">Tom Peace</h2>
+														<span class="sc-cnt-txt s-w f23">Managing Director</span><br>
+														<b class="sc-sub">The Loyalty People</b>
+													</div>
+												</div>
+											</div>
+										</div>
+			        	</div>
+			        	<div class="swiper-slide">
+			        			<div class="sc-i-1 steam3">
+			        				<div class="sc-bg-team">
+												<div class="sc-bg-team">
+													<div class="sc-cnt">
+														<h2 class="s-w">Paula Thomas</h2>
+														<span class="sc-cnt-txt s-w f23">Founder & CEO</span><br>
+														<b class="sc-sub">Let's Talk Loyalty</b>
+													</div>
+												</div>
+											</div>
+										</div>
+			        	</div>
+			        	<div class="swiper-slide">
+			        			<div class="sc-i-1 steam3">
+			        				<div class="sc-bg-team">
+												<div class="sc-bg-team">
+													<div class="sc-cnt">
+														<h2 class="s-w">Clarissa Schealer</h2>
+														<span class="sc-cnt-txt s-w f23">SVP, Loyalty</span><br>
+														<b class="sc-sub">Capillary Technologies</b>
+													</div>
+												</div>
+											</div>
+										</div>
+			        	</div>
+			        	<div class="swiper-slide">
+			        			<div class="sc-i-1 steam3">
+			        				<div class="sc-bg-team">
+												<div class="sc-bg-team">
+													<div class="sc-cnt">
+														<h2 class="s-w">Subhro Chakraborty</h2>
+														<span class="sc-cnt-txt s-w f23">CBO, Asia</span><br>
+														<b class="sc-sub">Capillary Technologies</b>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -578,30 +641,56 @@
 	            <div class="card-wrapper swiper-wrapper">
 	            	<div class="swiper-slide">
 	            			<div class="sc-i-1 simg1">
-											<div class="sc-bg">
-												<div class="sc-cnt">
-													<h2>Networking</h2>
-													<p class="sc-cnt-txt">Join some of the top names from across the globe and become a part of the community shaping the customer loyalty industry.</p>
+	            				<div class="sc-bg">
+	            					<div class="sc-bg">
+													<div class="sc-bg">
+														<div class="sc-cnt">
+															<h2>GenAI & Loyalty</h2>
+															<p class="sc-cnt-txt f16">Generative Loyalty is the biggest trend for 2024, this event is a must attend for discussions around AI & Loyalty.</p>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 	            	</div>
 	            	<div class="swiper-slide">
 	            			<div class="sc-i-1 simg2">
-											<div class="sc-bg">
-												<div class="sc-cnt">
-													<h2>Expert Sessions</h2>
-													<p class="sc-cnt-txt">Elevate your knowledge with unparalleled insights from industry leaders. Industry insights, expert analysis and more!</p>
+	            				<div class="sc-bg">
+	            					<div class="sc-bg">
+													<div class="sc-bg">
+														<div class="sc-cnt">
+															<h2>Loyalty Tech</h2>
+															<p class="sc-cnt-txt f16">Are you looking to leverage technology to enhance customer experience and build profitable loyalty programs? Captivate 2024 is for you!</p>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div> 
 	            	</div>
 	            	<div class="swiper-slide">
 	            			<div class="sc-i-1 simg3">
-											<div class="sc-bg">
-												<div class="sc-cnt">
-													<h2>GenAI & Loyalty</h2>
-													<p class="sc-cnt-txt">Generative Loyalty is the biggest trend for 2024, this event is a must attend for discussions around AI & Loyalty.</p>
+	            				<div class="sc-bg">
+	            					<div class="sc-bg">
+													<div class="sc-bg">
+														<div class="sc-cnt">
+															<h2>Expert Sessions</h2>
+															<p class="sc-cnt-txt f16">Elevate your knowledge with unparalleled insights from industry leaders. Industry insights, expert analysis and more!</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+	            	</div>
+	            	<div class="swiper-slide">
+	            			<div class="sc-i-1 simg4">
+	            				<div class="sc-bg">
+	            					<div class="sc-bg">
+													<div class="sc-bg">
+														<div class="sc-cnt">
+															<h2>Networking</h2>
+															<p class="sc-cnt-txt f16">Join some of the top names from across the globe and become a part of the community shaping the customer loyalty industry.</p>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -616,20 +705,24 @@
 	</section>
 	<section class="about">
 		<div class="container">
-			<h2 class="i4head txtc">Who's joining Captivate - an exclusive brand loyalty gathering ?</h2>
+			<h2 class="i4head">Who's joining Captivate - an exclusive brand loyalty gathering ?</h2>
 			<div class="section2">
-				<div class="secc1">
-					<h3 class="sec2bd">Global CXOs</h3>
-					<p class="sec2cnt">CMOs, CIOs, CDOs and Loyalty professionals shaping the brands of the future!</p>
-					<div class="shape4"></div>
+				<div class="secc1 sd">
+					<div>
+						<h3 class="sec2bd">Global CXOs</h3>
+						<p class="sec2cnt">CMOs, CIOs, CDOs and Loyalty professionals shaping the brands of the future!</p>
+						<div class="shape4"></div>
+					</div>
+					<div class="secline"></div>
 				</div>
-				<div class="secline"></div>
-				<div class="secc1">
-					<h3 class="sec2bd">Industry Analysts</h3>
-					<p class="sec2cnt">Learn from Forrester analysts and industry experts who get the big picture.</p>
-					<div class="shape4"></div>
+				<div class="secc1 sd">
+					<div>
+						<h3 class="sec2bd">Industry Analysts</h3>
+						<p class="sec2cnt">Learn from Forrester analysts and industry experts who get the big picture.</p>
+						<div class="shape4"></div>
+					</div>
+					<div class="secline"></div>
 				</div>
-				<div class="secline"></div>
 				<div class="secc1">
 					<h3 class="sec2bd">Media Partners</h3>
 					<p class="sec2cnt">WiseMarketer, The Loyalty People & Let's Talk Loyalty.</p>
