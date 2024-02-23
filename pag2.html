@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+<style>
+
+	body{
+		background-color: #E0E6FF;
+	}
+
+	@font-face {
+  font-family: myFont;
+  src: url('ClarikaProGeo-Bd.ttf')  format('truetype');
+	}
+	@font-face {
+  font-family: myFont1;
+  src: url('ClarikaProGeo-Rg.otf')  format('truetype');
+	}
+
+	.conts {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	.break {
+	  flex-basis: 100%;
+	  height: 0;
+	  margin-top: 200px;
+	  margin-bottom: 20px;
+	}
+	.item1{
+		padding: 0px;
+		margin: 0px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 104% auto;
+    background-image: url("top.jpg");
+    width: 100%;
+	}
+	.logo{
+		width: 110%;
+		margin-top: 12%;
+		margin-left: -100px;
+	}
+	.shape1{
+		width: 125vh; 
+		height: 150vh;
+		position: relative; 
+		margin-left: -100px; 
+		top: 7%;
+	}
+	.contnet{
+		position: absolute;
+		z-index: 0;
+		top: 25%;
+		left: 140px;
+		font-family: myFont;
+	}
+	.line1{
+		color: white;
+		font-size: 65px;
+		line-height: 1.0;
+	}
+	.line2{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		color: #BFADFF;
+	}
+	.block1{
+		background-color: white;
+		height: 60px;
+		width: 210px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		display: flex;
+	}
+	.icon{
+		height: inherit;
+		padding: 10px;
+		margin-left: 12px;
+	}
+	.icon_txt{
+		margin-top: 11px;
+		font-size: 21px;
+	}
+	.block2{
+		background-color: white;
+		height: 55px;
+		width: 320px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		display: flex;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.slash{
+    width: 1.5px;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 13px;
+
+	}
+	.txt2{
+    line-height: 1.2;
+    margin-top: 13px;
+    font-size: 12px;
+	}
+	.block3{
+		margin-top: 35px;
+	}
+	.line3{
+		color: white;
+		font-size: 35px;
+	}
+	.shape2{
+		background-color: white;
+		height: 8px;
+		width: 55px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+	.longtext{
+		font-family: myFont1;
+		color: white;
+		font-size: 18px;
+		max-width: 330px;
+	}
+	.line4{
+		font-family: myFont;
+		font-size: 35px;
+		margin-top: 200px;
+	}
+	.register{
+		position: relative;
+		background-color: white;
+		width: 560px;
+		height: 650px;
+		top: 166px;
+		right: 225px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.rtop{
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		height: 70px;
+		background: rgb(220,82,11);
+		background: linear-gradient(90deg, rgba(220,82,11,1) 46%, rgba(223,183,0,1) 84%);
+		text-align: center;
+		color: white;
+	}
+	.rtext{
+		padding-top: 20px;
+		font-family: myfont;
+		font-size: 25px;
+	}
+	.form{
+		font-family: myfont;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 30px;
+	}
+	.form-group{
+		margin: 10px;
+		display: flex;
+  	flex-wrap: wrap;
+	}
+	.label{
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	.field{
+		width: 100%;
+		padding: 10px;
+		border:  2px solid lightgrey;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	::placeholder {
+	  color: lightgrey;
+	  opacity: 1; /* Firefox */
+	}
+	.form-group-c{
+		margin-top: 20px;
+		margin-left: 12px;
+		display: flex;
+		font-size: 12px;
+	}
+	.cbx{
+		margin-right: 5px;
+	}
+
+	.item2{
+		width: 100%;
+		margin-top: 40px;
+		z-index: 99999;
+	}
+
+	.section2{
+		width: 100%;
+		height: 280px;
+		background-color: white;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+		display: flex;
+		justify-content: space-between;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.secc1{
+		margin-left: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 50px;
+		max-width: 350px;
+		color: #606060;
+	}
+	.secline{
+		width: 1px;
+		background-color: lightgrey;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.sec2bd{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.sec2cnt{
+		font-family: myfont1;
+		font-size: 18px;
+	}
+	.simg1{
+    background-image: url("s1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+	.simg2{
+    background-image: url("s2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+	.simg3{
+    background-image: url("s3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+
+	.shape4{
+		background: linear-gradient(90deg, rgba(0,142,215,1) 46%, rgba(110,0,233,1) 84%);
+		height: 8px;
+		width: 55px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+
+	.item3{
+		width: 100%;
+		background-color: #1F1E34;
+		margin-top: -110px;
+		padding-bottom: -40px;
+		margin-bottom: 80px;
+	}
+
+	.i3head{
+		font-family: myfont;
+		color: white;
+		margin-top: 220px;
+		margin-left: 50px;
+	}
+	.scroll{
+		margin-top: 40px;
+		margin-bottom: -60px;
+	}
+	.sc-i-1{
+		width: 100%;
+		background-color: white;
+		padding: 20px;
+		height: 500px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		position: relative;
+	}
+	.sc-bg{
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff);
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	}
+	.sc-cnt{
+		position: absolute;
+	  bottom: 0;
+	  left: 0;
+		font-family: myfont;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 30px;
+		padding-bottom: 20px;
+	}
+	.sc-cnt-txt{
+		font-family: myfont1;
+	}
+	.i4head{
+		font-family: myfont;
+		color: white;
+		margin-top: 180px;
+		margin-left: 50px;
+		margin-bottom: 30px;
+	}
+	
+	.sc-sub{
+		font-family: myfont;
+		color: #C2C2FF;
+	}
+	.sc-bg-team{
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #403570);
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	}
+	.steam1{
+    background-image: url("t1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110% auto;
+	}
+	.steam2{
+    background-image: url("t2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110% auto;
+	}
+	.steam3{
+    background-image: url("t3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110% auto;
+	}
+	.s-w{
+		color: white;
+	}
+	.item4{
+		background-image: url("bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 104% auto;
+		width: 100%;
+		height: 400px;
+		margin-top: 40px;
+		z-index: 99999;
+	}
+	.d-c{
+		margin-top: 150px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.block4{
+		background: linear-gradient(90deg, #292D5D 46%, #6238DA 84%);
+		width: 300px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		padding-top: 5px;
+		font-family: myfont;
+		font-weight: bold;
+		font-size: 30px;
+		color: white;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		margin: 20px;
+	}
+
+	/* Slider 2 */
+
+	.slide-container{
+	  width: 100%;
+	  padding: 40px 0;
+	}
+	.slide-content{
+	  margin: 0 40px;
+	  overflow: hidden;
+	  border-radius: 25px;
+	}
+	.card{
+	  border-radius: 25px;
+	  background-color: #FFF;
+	}
+	.swiper-navBtn{
+	  color: #6E93f7;
+	  transition: color 0.3s ease;
+	}
+	.swiper-navBtn:hover{
+	  color: #4070F4;
+	}
+	.swiper-navBtn::before,
+	.swiper-navBtn::after{
+	  font-size: 25px !important;
+	}
+	.swiper-button-next{
+	  right: 0;
+	}
+	.swiper-button-prev{
+	  left: 0;
+	}
+	.sbtn{
+    background-color: #434362;
+    width: 60px !important;
+    height: 60px !important;
+    border: 2px solid #5F40D0;
+    color: #009491 !important;
+    border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+</style>
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+</head>
+<body>
+<section>
+	<div class="web">
+		<div class="conts">
+			<!--Item 1-->
+			<div class="item1">
+				<div class="container">
+			    <div class="row">
+			    	<div class="col-md-8">
+			    		<img src="shape.png" class="shape1">
+			    		<div class="contnet">
+			    			<h1 class="line1">Welcome to<br>the future of<br>customer loyalty</h1>
+			    			<h2 class="line2">Humanizing experiences<br>through Al</h2>
+			    			<div class="block1">
+			    				<img src="icon1.png" class="icon">
+			    				<span class="icon_txt">April 16-17</span>
+			    			</div>
+			    			<div class="block2">
+			    				<img src="icon2.png" class="icon">
+			    				<span class="icon_txt">Dubai</span>
+			    				<div class="slash"></div>
+			    				<span class="txt2">Grand Plaza Mövenpick<br>Media City</span>
+			    			</div>
+			    			<div class="block3">
+			    				<h2 class="line3">About the Event</h2>
+			    				<div class="shape2"></div>
+			    				<div class="longtext">
+			    					Captivate is the biggest extravaganza in the field of customer loyalty & AI. An exclusive event for brand loyalty professionals from across the globe to network, share insights and create ripple effects for businesses. Captivate is THE place to be to see how AI is shaping the world of loyalty.
+			    				</div>
+			    				<h2 class="line4">Who’s joining the mega<br>Loyalty festival?</h2>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="col-md-4">
+			    		<img class="logo" src="logo.png">
+			    		<div class="register">
+			    			<div class="rtop">
+			    				<h2 class="rtext">Secure Your Spot Now</h2>
+			    			</div>
+			    			<div class="form">
+			    				<div class="form-group">
+			    					<label class="label">First name*</label>
+			    					<input class="field" type="text" placeholder="Type your first name">
+			    				</div>
+			    				<div class="form-group">
+			    					<label class="label">Last name*</label>
+			    					<input class="field" type="text" placeholder="Type your last name">
+			    				</div>
+			    				<div class="form-group">
+			    					<label class="label">Work email*</label>
+			    					<input class="field" type="text" placeholder="Type your email">
+			    				</div>
+			    				<div class="form-group">
+			    					<label class="label">Title</label>
+			    					<input class="field" type="text" placeholder="Type your email">
+			    				</div>
+			    				<div class="form-group">
+			    					<label class="label">Company Name*</label>
+			    					<input class="field" type="text" placeholder="Type your email">
+			    				</div>
+			    				<div class="form-group-c">
+			    					<input class="cbx" type="checkbox">
+			    					<span>By completing this form, you agree to Capillary's Privacy Policy.</span>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			</div>
+			<!-- -->
+			<div class="break"></div>
+			<!--Item 2-->
+			<div class="item2">
+				<div class="container">
+					<div class="section2">
+						<div class="secc1">
+							<h3 class="sec2bd">Global CXOs</h3>
+							<p class="sec2cnt">CMOs, CIOs, CDOs and more shaping the brands of the future</p>
+							<div class="shape4"></div>
+						</div>
+						<div class="secline"></div>
+						<div class="secc1">
+							<h3 class="sec2bd">Industry Analysts</h3>
+							<p class="sec2cnt">Expert analysts and reporters who have been tracking the loyaty space</p>
+							<div class="shape4"></div>
+						</div>
+						<div class="secline"></div>
+						<div class="secc1">
+							<h3 class="sec2bd">Media Partners</h3>
+							<p class="sec2cnt">WiseMarketer, The Loyalty People & more!</p>
+							<div class="shape4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- -->
+			<!--Item 2-->
+			<div class="item3">
+				<div> 
+					<div class="container">
+						
+						<h2 class="i3head">Why should you attend?</h2>
+
+						<div class="scroll">
+							<div class="slide-container swiper">
+			          <div class="slide-content">
+			              <div class="card-wrapper swiper-wrapper">
+			              	<div class="swiper-slide">
+			              			<div class="sc-i-1 simg1">
+														<div class="sc-bg">
+															<div class="sc-cnt">
+																<h2>Networking</h2>
+																<p class="sc-cnt-txt">Join some of the top names from across the globe and become a part of the community shaping the customer loyalty industry.</p>
+															</div>
+														</div>
+													</div>
+			              	</div>
+			              	<div class="swiper-slide">
+			              			<div class="sc-i-1 simg2">
+														<div class="sc-bg">
+															<div class="sc-cnt">
+																<h2>Expert Sessions</h2>
+																<p class="sc-cnt-txt">Elevate your knowledge with unparalleled insights from industry leaders. Industry insights, expert analysis and more!</p>
+															</div>
+														</div>
+													</div> 
+			              	</div>
+			              	<div class="swiper-slide">
+			              			<div class="sc-i-1 simg3">
+														<div class="sc-bg">
+															<div class="sc-cnt">
+																<h2>GenAI & Loyalty</h2>
+																<p class="sc-cnt-txt">Generative Loyalty is the biggest trend for 2024, this event is a must attend for discussions around AI & Loyalty.</p>
+															</div>
+														</div>
+													</div>
+			              	</div>
+			              </div>
+			          </div>
+			          <div class="sbtn swiper-button-next swiper-navBtn"></div>
+			           <div class="sbtn swiper-button-prev swiper-navBtn"></div>
+			        </div>
+			      </div>
+						
+						<h2 class="i4head">Key Speakers</h2>
+
+						<div class="scroll">
+							<div class="slide-container swiper">
+			          <div class="slide-content">
+			              <div class="card-wrapper swiper-wrapper">
+			              	<div class="swiper-slide">
+			              			<div class="sc-i-1 steam1">
+													<div class="sc-bg-team">
+														<div class="sc-cnt">
+															<h2 class="s-w">Sameer Garde</h2>
+															<p class="sc-cnt-txt s-w">Executive Director & Group CEO</p>
+															<b class="sc-sub">Capillary technology</b>
+														</div>
+													</div>
+												</div>
+			              	</div>
+			              	<div class="swiper-slide">
+			              			<div class="sc-i-1 steam2">
+														<div class="sc-bg-team">
+															<div class="sc-cnt">
+																<h2 class="s-w">Aneesh Reddy</h2>
+																<p class="sc-cnt-txt s-w">Founder & MD</p>
+																<b class="sc-sub">Capillary technology</b>
+															</div>
+														</div>
+													</div>
+			              	</div>
+			              	<div class="swiper-slide">
+			              			<div class="sc-i-1 steam3">
+														<div class="sc-bg-team">
+															<div class="sc-cnt">
+																<h2 class="s-w">Anant Choubey</h2>
+																<p class="sc-cnt-txt s-w">Co-founder & COO</p>
+																<b class="sc-sub">Capillary technology</b>
+															</div>
+														</div>
+													</div>
+			              	</div>
+			              </div>
+			          </div>
+			          <div class="sbtn swiper-button-next swiper-navBtn"></div>
+			          <div class="sbtn swiper-button-prev swiper-navBtn"></div>
+			        </div>
+			      </div>
+					</div>
+				</div>
+			</div>
+			<!-- -->
+
+			<!--Item 2-->
+			<div class="item4">
+				<div class="container">
+					<div class="d-c">
+						<div class="block4">
+							Sign up now!
+						</div>	
+					</div>	
+				</div>
+			</div>
+			<!-- -->
+		</div>
+	</div>
+</section>
+
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

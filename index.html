@@ -26,57 +26,55 @@
   src: url('ClarikaProGeo-Rg.otf')  format('truetype');
 	}
 
-	.conts {
-	  display: flex;
-	  flex-wrap: wrap;
+	.head{
+		padding-bottom: 300px;
 	}
-	.break {
-	  flex-basis: 100%;
-	  height: 0;
-	  margin-top: 200px;
-	  margin-bottom: 20px;
+	.header{
+		width: 100%;
+		height: 600px;
+		background-size: cover;
+		background-image: url(top.jpg);
+		background-repeat: no-repeat;
+		padding-top: 40px;
+		color: white;
 	}
-	.item1{
-		padding: 0px;
-		margin: 0px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 104% auto;
-    background-image: url("top.jpg");
-    width: 100%;
+	.main{
+		background-image: url(shape.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		height: 1200px;
+		margin-top: 20px;
+	}
+	.no-gutters {
+	  margin-right: 0;
+	  margin-left: 0;
 	}
 	.logo{
-		width: 110%;
-		margin-top: 12%;
-		margin-left: -100px;
-	}
-	.shape1{
-		width: 125vh; 
-		height: 150vh;
-		position: relative; 
-		margin-left: -100px; 
-		top: 7%;
+		max-width: 500px;
+		padding-right: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.contnet{
-		position: absolute;
-		z-index: 0;
-		top: 25%;
-		left: 140px;
 		font-family: myFont;
+		padding-top: 100px;
+		padding-left: 100px;
 	}
 	.line1{
 		color: white;
-		font-size: 65px;
+		font-size: 55px;
 		line-height: 1.0;
 	}
 	.line2{
 		margin-top: 40px;
 		margin-bottom: 40px;
 		color: #BFADFF;
+		line-height: 1.2;
 	}
 	.block1{
+		color: black;
 		background-color: white;
-		height: 60px;
+		height: 55px;
 		width: 210px;
 		border-top-left-radius: 30px;
 		border-bottom-left-radius: 30px;
@@ -94,6 +92,7 @@
 		font-size: 21px;
 	}
 	.block2{
+		color: black;
 		background-color: white;
 		height: 55px;
 		width: 320px;
@@ -102,7 +101,7 @@
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 		display: flex;
-		margin-top: 10px;
+		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 	.slash{
@@ -112,7 +111,6 @@
     margin-left: 14px;
     margin-right: 14px;
     margin-top: 13px;
-
 	}
 	.txt2{
     line-height: 1.2;
@@ -120,7 +118,7 @@
     font-size: 12px;
 	}
 	.block3{
-		margin-top: 35px;
+		margin-top: 40px;
 	}
 	.line3{
 		color: white;
@@ -134,27 +132,22 @@
 		border-bottom-left-radius: 30px;
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
-		margin-top: 30px;
-		margin-bottom: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
 	}
 	.longtext{
 		font-family: myFont1;
 		color: white;
-		font-size: 18px;
-		max-width: 330px;
-	}
-	.line4{
-		font-family: myFont;
-		font-size: 35px;
-		margin-top: 200px;
+		font-size: 16px;
+		padding-right: 295px;
+    text-wrap: wrap;
 	}
 	.register{
-		position: relative;
+		margin-top: 25px;
+		margin-left: -46px;
 		background-color: white;
-		width: 560px;
+		width: 500px;
 		height: 650px;
-		top: 166px;
-		right: 225px;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
 		border-top-right-radius: 20px;
@@ -164,11 +157,12 @@
 	.rtop{
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
+		width: inherit;
 		height: 70px;
-		background: rgb(220,82,11);
 		background: linear-gradient(90deg, rgba(220,82,11,1) 46%, rgba(223,183,0,1) 84%);
 		text-align: center;
 		color: white;
+		margin-left: -12px;
 	}
 	.rtext{
 		padding-top: 20px;
@@ -187,6 +181,7 @@
   	flex-wrap: wrap;
 	}
 	.label{
+		color: black;
 		width: 100%;
 		padding-bottom: 10px;
 	}
@@ -208,102 +203,20 @@
 		margin-left: 12px;
 		display: flex;
 		font-size: 12px;
+		color: black;
 	}
 	.cbx{
 		margin-right: 5px;
 	}
-
-	.item2{
-		width: 100%;
-		margin-top: 40px;
-		z-index: 99999;
+	.section-team{
+		margin-top: 350px;
 	}
-
-	.section2{
-		width: 100%;
-		height: 280px;
-		background-color: white;
-		border-top-left-radius: 50px;
-		border-bottom-left-radius: 50px;
-		border-top-right-radius: 50px;
-		border-bottom-right-radius: 50px;
-		display: flex;
-		justify-content: space-between;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	.secc1{
-		margin-left: 20px;
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-top: 50px;
-		max-width: 350px;
-		color: #606060;
-	}
-	.secline{
-		width: 1px;
-		background-color: lightgrey;
+	.i4head{
 		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-
-	.sec2bd{
-		font-weight: bold;
-		font-size: 20px;
-	}
-	.sec2cnt{
-		font-family: myfont1;
-		font-size: 18px;
-	}
-	.simg1{
-    background-image: url("s1.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 115% auto;
-	}
-	.simg2{
-    background-image: url("s2.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 115% auto;
-	}
-	.simg3{
-    background-image: url("s3.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 115% auto;
-	}
-
-	.shape4{
-		background: linear-gradient(90deg, rgba(0,142,215,1) 46%, rgba(110,0,233,1) 84%);
-		height: 8px;
-		width: 55px;
-		border-top-left-radius: 30px;
-		border-bottom-left-radius: 30px;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		margin-top: 30px;
-		margin-bottom: 25px;
-	}
-
-	.item3{
-		width: 100%;
-		background-color: #1F1E34;
-		margin-top: -110px;
-		padding-bottom: -40px;
-		margin-bottom: 80px;
-	}
-
-	.i3head{
+		margin-left: 40px;
+		margin-bottom: 35px;
+		color: #1F1E34;
 		font-family: myfont;
-		color: white;
-		margin-top: 220px;
-		margin-left: 50px;
-	}
-	.scroll{
-		margin-top: 40px;
-		margin-bottom: -60px;
 	}
 	.sc-i-1{
 		width: 100%;
@@ -316,15 +229,9 @@
 		border-bottom-right-radius: 20px;
 		position: relative;
 	}
-	.sc-bg{
-		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff);
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+	.sc-sub{
+		font-family: myfont;
+		color: #C2C2FF;
 	}
 	.sc-cnt{
 		position: absolute;
@@ -336,20 +243,8 @@
 		padding-right: 30px;
 		padding-bottom: 20px;
 	}
-	.sc-cnt-txt{
-		font-family: myfont1;
-	}
-	.i4head{
-		font-family: myfont;
+	.s-w{
 		color: white;
-		margin-top: 180px;
-		margin-left: 50px;
-		margin-bottom: 30px;
-	}
-	
-	.sc-sub{
-		font-family: myfont;
-		color: #C2C2FF;
 	}
 	.sc-bg-team{
 		border-bottom-left-radius: 20px;
@@ -378,42 +273,6 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 110% auto;
-	}
-	.s-w{
-		color: white;
-	}
-	.item4{
-		background-image: url("bottom.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 104% auto;
-		width: 100%;
-		height: 400px;
-		margin-top: 40px;
-		z-index: 99999;
-	}
-	.d-c{
-		margin-top: 150px;
-		display: flex;
-		justify-content: center;
-		width: 100%;
-	}
-	.block4{
-		background: linear-gradient(90deg, #292D5D 46%, #6238DA 84%);
-		width: 300px;
-		height: 60px;
-		display: flex;
-		justify-content: center;
-		padding-top: 5px;
-		font-family: myfont;
-		font-weight: bold;
-		font-size: 30px;
-		color: white;
-		border-top-left-radius: 30px;
-		border-bottom-left-radius: 30px;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		margin: 20px;
 	}
 
 	/* Slider 2 */
@@ -459,51 +318,173 @@
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 	}
-</style>
+	.section-services{
+		width: 100%;
+		background-color: #1F1E34;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.i3head{
+		font-family: myfont;
+		color: white;
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+	.simg1{
+    background-image: url("s1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+	.simg2{
+    background-image: url("s2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+	.simg3{
+    background-image: url("s3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 115% auto;
+	}
+	.sc-bg{
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff);
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	}
+	.section2{
+		width: 100%;
+		height: 300px;
+		background-color: white;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 10px;
+	}
+	.secc1{
+		margin-left: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 50px;
+		max-width: 350px;
+		color: #606060;
+	}
+	.secline{
+		width: 1px;
+		background-color: lightgrey;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 
+	.sec2bd{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.sec2cnt{
+		font-family: myfont1;
+	}
+	.shape4{
+		background: linear-gradient(90deg, rgba(0,142,215,1) 46%, rgba(110,0,233,1) 84%);
+		height: 8px;
+		width: 55px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+	.txtc{
+		text-align: center;
+	}
+	.about{
+		background-image: url("bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 104% auto;
+		width: 100%;
+		height: 800px;
+		margin-top: 40px;
+		z-index: 99999;
+	}
+	.d-c{
+		margin-top: 150px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.block4{
+		background: linear-gradient(90deg, #292D5D 46%, #6238DA 84%);
+		width: 300px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		padding-top: 5px;
+		font-family: myfont;
+		font-weight: bold;
+		font-size: 30px;
+		color: white;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		margin: 20px;
+	}
+</style>
 
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="swiper-bundle.min.css">
 
-
 </head>
 <body>
-
-<section>
-	<div class="web">
-		<div class="conts">
-			<!--Item 1-->
-			<div class="item1">
-				<div class="container">
-			    <div class="row">
-			    	<div class="col-md-8">
-			    		<img src="shape.png" class="shape1">
-			    		<div class="contnet">
-			    			<h1 class="line1">Welcome to<br>the future of<br>customer loyalty</h1>
-			    			<h2 class="line2">Humanizing experiences<br>through Al</h2>
-			    			<div class="block1">
-			    				<img src="icon1.png" class="icon">
-			    				<span class="icon_txt">April 16-17</span>
-			    			</div>
-			    			<div class="block2">
-			    				<img src="icon2.png" class="icon">
-			    				<span class="icon_txt">Dubai</span>
-			    				<div class="slash"></div>
-			    				<span class="txt2">Grand Plaza Mövenpick<br>Media City</span>
-			    			</div>
-			    			<div class="block3">
-			    				<h2 class="line3">About the Event</h2>
-			    				<div class="shape2"></div>
-			    				<div class="longtext">
-			    					Captivate is the biggest extravaganza in the field of customer loyalty & AI. An exclusive event for brand loyalty professionals from across the globe to network, share insights and create ripple effects for businesses. Captivate is THE place to be to see how AI is shaping the world of loyalty.
-			    				</div>
-			    				<h2 class="line4">Who’s joining the mega<br>Loyalty festival?</h2>
-			    			</div>
+	<section class="head">
+		<img src="menu.png" class="img-fluid">
+		<div class="header">
+			<div class="">
+				<div class="row no-gutters">
+				  <div class="col-md-7 main">
+				  	<div class="contnet">
+				  		<h1 class="line1">Welcome to<br>the future of<br>customer loyalty</h1>
+			    		<h2 class="line2">Humanizing experiences<br>through Al</h2>
+			    		<div class="block1">
+		    				<img src="icon1.png" class="icon">
+		    				<span class="icon_txt">April 16-17</span>
 			    		</div>
-			    	</div>
-			    	<div class="col-md-4">
-			    		<img class="logo" src="logo.png">
-			    		<div class="register">
+			    		<div class="block2">
+		    				<img src="icon2.png" class="icon">
+		    				<span class="icon_txt">Dubai</span>
+		    				<div class="slash"></div>
+		    				<span class="txt2">Grand Plaza Mövenpick<br>Media City</span>
+		    			</div>
+		    			<div class="block3">
+		    				<h2 class="line3">About the Event</h2>
+		    				<div class="shape2"></div>
+		    				<div class="longtext">
+		    					Captivate is the biggest extravaganza in the field of customer loyalty & AI. An exclusive event for brand loyalty professionals from across the globe to network, share insights and create ripple effects for businesses. Captivate is THE place to be to see how AI is shaping the world of loyalty.
+		    				</div>
+		    			</div>
+				  	</div>
+					</div>
+				  <div class="col-md-5">
+				  	<div class="row no-gutters">
+				  		<img src="logo.png" class="img-fluid logo">
+				  	</div>
+				  	<div class="row">
+				  		<div class="register">
 			    			<div class="rtop">
 			    				<h2 class="rtext">Secure Your Spot Now</h2>
 			    			</div>
@@ -534,150 +515,134 @@
 			    				</div>
 			    			</div>
 			    		</div>
-			    	</div>
-			    </div>
-			</div>
-			</div>
-			<!-- -->
-			<div class="break"></div>
-			<!--Item 2-->
-			<div class="item2">
-				<div class="container">
-					<div class="section2">
-						<div class="secc1">
-							<h3 class="sec2bd">Global CXOs</h3>
-							<p class="sec2cnt">CMOs, CIOs, CDOs and more shaping the brands of the future</p>
-							<div class="shape4"></div>
-						</div>
-						<div class="secline"></div>
-						<div class="secc1">
-							<h3 class="sec2bd">Industry Analysts</h3>
-							<p class="sec2cnt">Expert analysts and reporters who have been tracking the loyaty space</p>
-							<div class="shape4"></div>
-						</div>
-						<div class="secline"></div>
-						<div class="secc1">
-							<h3 class="sec2bd">Media Partners</h3>
-							<p class="sec2cnt">WiseMarketer, The Loyalty People & more!</p>
-							<div class="shape4"></div>
-						</div>
+				  	</div>
 					</div>
 				</div>
 			</div>
-			<!-- -->
-			<!--Item 2-->
-			<div class="item3">
-				<div> 
-					<div class="container">
-						
-						<h2 class="i3head">Why should you attend?</h2>
-
-						<div class="scroll">
-							<div class="slide-container swiper">
-			          <div class="slide-content">
-			              <div class="card-wrapper swiper-wrapper">
-			              	<div class="swiper-slide">
-			              			<div class="sc-i-1 simg1">
-														<div class="sc-bg">
-															<div class="sc-cnt">
-																<h2>Networking</h2>
-																<p class="sc-cnt-txt">Join some of the top names from across the globe and become a part of the community shaping the customer loyalty industry.</p>
-															</div>
-														</div>
-													</div>
-			              	</div>
-			              	<div class="swiper-slide">
-			              			<div class="sc-i-1 simg2">
-														<div class="sc-bg">
-															<div class="sc-cnt">
-																<h2>Expert Sessions</h2>
-																<p class="sc-cnt-txt">Elevate your knowledge with unparalleled insights from industry leaders. Industry insights, expert analysis and more!</p>
-															</div>
-														</div>
-													</div> 
-			              	</div>
-			              	<div class="swiper-slide">
-			              			<div class="sc-i-1 simg3">
-														<div class="sc-bg">
-															<div class="sc-cnt">
-																<h2>GenAI & Loyalty</h2>
-																<p class="sc-cnt-txt">Generative Loyalty is the biggest trend for 2024, this event is a must attend for discussions around AI & Loyalty.</p>
-															</div>
-														</div>
-													</div>
-			              	</div>
-			              </div>
-			          </div>
-			          <div class="sbtn swiper-button-next swiper-navBtn"></div>
-			           <div class="sbtn swiper-button-prev swiper-navBtn"></div>
-			        </div>
-			      </div>
-						
-						<h2 class="i4head">Key Speakers</h2>
-
-						<div class="scroll">
-							<div class="slide-container swiper">
-			          <div class="slide-content">
-			              <div class="card-wrapper swiper-wrapper">
-			              	<div class="swiper-slide">
-			              			<div class="sc-i-1 steam1">
-													<div class="sc-bg-team">
-														<div class="sc-cnt">
-															<h2 class="s-w">Sameer Garde</h2>
-															<p class="sc-cnt-txt s-w">Executive Director & Group CEO</p>
-															<b class="sc-sub">Capillary technology</b>
-														</div>
-													</div>
-												</div>
-			              	</div>
-			              	<div class="swiper-slide">
-			              			<div class="sc-i-1 steam2">
-														<div class="sc-bg-team">
-															<div class="sc-cnt">
-																<h2 class="s-w">Aneesh Reddy</h2>
-																<p class="sc-cnt-txt s-w">Founder & MD</p>
-																<b class="sc-sub">Capillary technology</b>
-															</div>
-														</div>
-													</div>
-			              	</div>
-			              	<div class="swiper-slide">
-			              			<div class="sc-i-1 steam3">
-														<div class="sc-bg-team">
-															<div class="sc-cnt">
-																<h2 class="s-w">Anant Choubey</h2>
-																<p class="sc-cnt-txt s-w">Co-founder & COO</p>
-																<b class="sc-sub">Capillary technology</b>
-															</div>
-														</div>
-													</div>
-			              	</div>
-			              </div>
-			          </div>
-			          <div class="sbtn swiper-button-next swiper-navBtn"></div>
-			          <div class="sbtn swiper-button-prev swiper-navBtn"></div>
-			        </div>
-			      </div>
-					</div>
-				</div>
-			</div>
-			<!-- -->
-
-			<!--Item 2-->
-			<div class="item4">
-				<div class="container">
-					<div class="d-c">
-						<div class="block4">
-							Sign up now!
-						</div>	
-					</div>	
-				</div>
-			</div>
-			<!-- -->
 		</div>
-	</div>
-</section>
-
+	</section>
+	<section class="section-team">
+		<div class="container">
+			<h2 class="i4head">Featured Speakers</h2>
+			<div class="scroll">
+				<div class="slide-container swiper">
+			    <div class="slide-content">
+			        <div class="card-wrapper swiper-wrapper">
+			        	<div class="swiper-slide">
+			        			<div class="sc-i-1 steam1">
+										<div class="sc-bg-team">
+											<div class="sc-cnt">
+												<h2 class="s-w">Sameer Garde</h2>
+												<p class="sc-cnt-txt s-w">Executive Director & Group CEO</p>
+												<b class="sc-sub">Capillary technology</b>
+											</div>
+										</div>
+									</div>
+			        	</div>
+			        	<div class="swiper-slide">
+			        			<div class="sc-i-1 steam2">
+											<div class="sc-bg-team">
+												<div class="sc-cnt">
+													<h2 class="s-w">Aneesh Reddy</h2>
+													<p class="sc-cnt-txt s-w">Founder & MD</p>
+													<b class="sc-sub">Capillary technology</b>
+												</div>
+											</div>
+										</div>
+			        	</div>
+			        	<div class="swiper-slide">
+			        			<div class="sc-i-1 steam3">
+											<div class="sc-bg-team">
+												<div class="sc-cnt">
+													<h2 class="s-w">Anant Choubey</h2>
+													<p class="sc-cnt-txt s-w">Co-founder & COO</p>
+													<b class="sc-sub">Capillary technology</b>
+												</div>
+											</div>
+										</div>
+			        	</div>
+			        </div>
+			    </div>
+			    <div class="sbtn swiper-button-next swiper-navBtn"></div>
+			    <div class="sbtn swiper-button-prev swiper-navBtn"></div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	<section class="section-services">
+		<div class="container">
+			<h2 class="i3head">Why should you attend?</h2>
+			<div class="scroll">
+				<div class="slide-container swiper">
+	        <div class="slide-content">
+	            <div class="card-wrapper swiper-wrapper">
+	            	<div class="swiper-slide">
+	            			<div class="sc-i-1 simg1">
+											<div class="sc-bg">
+												<div class="sc-cnt">
+													<h2>Networking</h2>
+													<p class="sc-cnt-txt">Join some of the top names from across the globe and become a part of the community shaping the customer loyalty industry.</p>
+												</div>
+											</div>
+										</div>
+	            	</div>
+	            	<div class="swiper-slide">
+	            			<div class="sc-i-1 simg2">
+											<div class="sc-bg">
+												<div class="sc-cnt">
+													<h2>Expert Sessions</h2>
+													<p class="sc-cnt-txt">Elevate your knowledge with unparalleled insights from industry leaders. Industry insights, expert analysis and more!</p>
+												</div>
+											</div>
+										</div> 
+	            	</div>
+	            	<div class="swiper-slide">
+	            			<div class="sc-i-1 simg3">
+											<div class="sc-bg">
+												<div class="sc-cnt">
+													<h2>GenAI & Loyalty</h2>
+													<p class="sc-cnt-txt">Generative Loyalty is the biggest trend for 2024, this event is a must attend for discussions around AI & Loyalty.</p>
+												</div>
+											</div>
+										</div>
+	            	</div>
+	            </div>
+	        </div>
+	        <div class="sbtn swiper-button-next swiper-navBtn"></div>
+	         <div class="sbtn swiper-button-prev swiper-navBtn"></div>
+	      </div>
+	    </div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<h2 class="i4head txtc">Who's joining Captivate - an exclusive brand loyalty gathering ?</h2>
+			<div class="section2">
+				<div class="secc1">
+					<h3 class="sec2bd">Global CXOs</h3>
+					<p class="sec2cnt">CMOs, CIOs, CDOs and Loyalty professionals shaping the brands of the future!</p>
+					<div class="shape4"></div>
+				</div>
+				<div class="secline"></div>
+				<div class="secc1">
+					<h3 class="sec2bd">Industry Analysts</h3>
+					<p class="sec2cnt">Learn from Forrester analysts and industry experts who get the big picture.</p>
+					<div class="shape4"></div>
+				</div>
+				<div class="secline"></div>
+				<div class="secc1">
+					<h3 class="sec2bd">Media Partners</h3>
+					<p class="sec2cnt">WiseMarketer, The Loyalty People & Let's Talk Loyalty.</p>
+					<div class="shape4"></div>
+				</div>
+			</div>
+			<div class="d-c">
+				<div class="block4">
+					Sign up now!
+				</div>	
+			</div>	
+		</div>
+	</section>
 <script src="swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
