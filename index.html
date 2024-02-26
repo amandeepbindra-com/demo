@@ -361,7 +361,7 @@
     background-size: cover;
 	}
 	.simg2{
-    background-image: url("s2.jpg");
+    background-image: url("s4.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -731,6 +731,166 @@
 			height: 800px;
 		}
 	}
+	/* marketo form*/
+
+  #mktoForm_1843 .mktoOffset {
+    display: none;
+  }
+
+  #mktoForm_1843 ::placeholder,
+  #mktoForm_1843 option {
+    color: #1A2D3C;
+    font-size: 14px;
+  }
+
+
+  #mktoForm_1843 .mktoButtonRow button {
+    width: 90%;
+    background: unset;
+    background-color: #1D3448 !important;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 20px;
+  }
+
+  #mktoForm_1843 .mktoButtonRow {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  #mktoForm_1843 span.mktoButtonWrap.mktoSimple {
+    margin: auto !important;
+  }
+
+  #mktoForm_1843 .mktoButtonRow {
+    margin-top: 15px !important;
+  }
+
+  #mktoForm_1843 .mktoButtonRow {
+    text-align: center !important;
+  }
+
+  #mktoForm_1843 .mktoForm .mktoFormCol {
+    width: 100%;
+  }
+
+
+  form#mktoForm_1843 label#LblLastName,
+  form#mktoForm_1843 label#LblEmail,
+
+  form#mktoForm_1843 label#LblMobilePhone,
+  form#mktoForm_1843 label#LblCompany,
+
+  form#mktoForm_1843 label#LblCountry,
+  form#mktoForm_1843 label#LblProduct_Pillar__c,
+
+  form#mktoForm_1843 label#LblWhere_did_you_hear_about_us__c,
+  form#mktoForm_1843 label#LblFirstName {
+    visibility: hidden;
+  }
+
+  form#mktoForm_1843 input#FirstName,
+  form#mktoForm_1843 input#MobilePhone,
+  form#mktoForm_1843 input#LastName,
+  form#mktoForm_1843 input#Email,
+  form#mktoForm_1843 input#Company,
+  form#mktoForm_1843 input#Country,
+  form#mktoForm_1843 select#Product_Pillar__c,
+  form#mktoForm_1843 select#Where_did_you_hear_about_us__c,
+  form#mktoForm_1843 select#Country {
+    padding: 18px 36px;
+    width: 100% !important;
+    border: 1px solid #1b2e3fb9;
+    border-radius: 28px;
+    outline: none;
+
+  }
+
+  input#FirstName:focus,
+  input#MobilePhone:focus,
+  input#LastName:focus,
+  input#Email:focus,
+  input#Country:focus,
+  select#Product_Pillar__c:focus,
+  select#Where_did_you_hear_about_us__c:focus,
+  input#Company:focus,
+  select#Country:focus {
+    border: 1px solid #1b2e3fb9 !important;
+  }
+
+  form#mktoForm_1843 .mktoFieldDescriptor.mktoFormCol {
+    width: inherit;
+  }
+
+  form#mktoForm_1843 {
+    display: grid;
+    width: 100% !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    column-gap: 20px;
+  }
+
+
+  #mktoForm_1843 .mktoFieldWrap.mktoRequiredField {
+    width: 100%;
+  }
+
+  #mktoForm_1843 .mktoAsterix {
+    display: none !important;
+  }
+
+  /* marketo form ends*/
+
+
+  @media screen and (max-width:767px) {
+    .home-bg.home-bg-respons {
+      margin-top: -40px;
+      padding: 0;
+      background: none;
+      position: relative;
+    }
+
+    .cdp_hero_mob {
+      height: 270px;
+    }
+
+    .home-bg.home-bg-respons .container {
+      position: absolute;
+      top: 45%;
+      left: 0;
+    }
+
+    .mktoForm .mktoLabel {
+      line-height: 0;
+    }
+
+    .mktoForm .mktoFormRow,
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField,
+    #mktoForm_1843 .mktoButtonRow button {
+      width: 100% !important;
+    }
+
+    .mktoForm input[type=url],
+    .mktoForm input[type=text],
+    .mktoForm input[type=date],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=email],
+    .mktoForm input[type=number],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField {
+      height: 3.5em;
+    }
+  }
 </style>
 
 <!-- Swiper CSS -->
@@ -776,30 +936,14 @@
 			    				<h2 class="rtext">Secure Your Spot Now</h2>
 			    			</div>
 			    			<div class="form">
-			    				<div class="form-group">
-			    					<label class="label">First name*</label>
-			    					<input class="field" type="text" placeholder="Type your first name">
-			    				</div>
-			    				<div class="form-group">
-			    					<label class="label">Last name*</label>
-			    					<input class="field" type="text" placeholder="Type your last name">
-			    				</div>
-			    				<div class="form-group">
-			    					<label class="label">Work email*</label>
-			    					<input class="field" type="text" placeholder="Type your email">
-			    				</div>
-			    				<div class="form-group">
-			    					<label class="label">Title</label>
-			    					<input class="field" type="text" placeholder="Type your email">
-			    				</div>
-			    				<div class="form-group">
-			    					<label class="label">Company Name*</label>
-			    					<input class="field" type="text" placeholder="Type your email">
-			    				</div>
-			    				<div class="form-group-c">
-			    					<input class="cbx" type="checkbox">
-			    					<span class="m-mt2">By completing this form, you agree to Capillary's Privacy Policy.</span>
-			    				</div>
+			    				<div class="form-part-wrapper">
+									<script src="//go.capillarycem.com/js/forms2/js/forms2.min.js"></script>
+										<form id="mktoForm_1953"></form>
+										<script >
+										$(document).ready(function() {
+											MktoForms2.loadForm("//go.capillarycem.com", "005-GYU-207", 1953);
+										});
+									</script>
 			    			</div>
 			    		</div>
 				  	</div>
